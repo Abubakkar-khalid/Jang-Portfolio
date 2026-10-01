@@ -27,10 +27,10 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
-            <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-brand-600 hover:bg-brand-700 text-black font-bold tracking-widest uppercase text-sm transition-all flex items-center justify-center gap-2 group">
+            <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-brand-600 hover:bg-brand-700 text-white font-bold tracking-widest uppercase text-sm transition-all flex items-center justify-center gap-2 group">
               Start Your Campaign <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
-            <a href="#services" className="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-navy-900 text-navy-900   font-bold tracking-widest uppercase text-sm transition-all">
+            <a href="#services" className="w-full sm:w-auto px-8 py-4 bg-transparent border-2 border-navy-900 text-navy-900 hover:bg-navy-900 hover:text-white font-bold tracking-widest uppercase text-sm transition-all">
               Our Expertise
             </a>
           </div>

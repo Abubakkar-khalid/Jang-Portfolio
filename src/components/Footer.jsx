@@ -3,14 +3,14 @@ import { Newspaper } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-950 border-t border-white/5 py-16 px-4">
+    <footer className=" border-t border-white/5 py-16 px-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 bg-brand-600 flex items-center justify-center">
             <Newspaper className="w-5 h-5 text-white" />
           </div>
           <span className="text-xl font-black font-serif text-black tracking-wide">
-            IR ADVERTISEMENT
+            IR ADVERTISER
           </span>
         </div>
         <p className="text-slate-500 font-sans text-sm tracking-wide">© 2026 IR Advertisement. All rights reserved.</p>

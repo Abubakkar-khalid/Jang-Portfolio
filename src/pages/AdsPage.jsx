@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Search } from 'lucide-react';
 import Contact from '../components/Contact';
 
@@ -35,6 +35,10 @@ const ALL_ADS_DB = [
 export default function AdsPage() {
   const [activeCategory, setActiveCategory] = useState('All');
   const [searchQuery, setSearchQuery] = useState('');
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   // Filter Logic
   const filteredAds = ALL_ADS_DB.filter((ad) => {

@@ -48,12 +48,12 @@ const PORTFOLIO_ADS = [
 
 export default function Portfolio() {
   return (
-    <section id="portfolio" className="py-32 px-4 bg-navy-950 text-black">
+    <section id="portfolio" className="py-32 px-4 bg-navy-950 text-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 border-b border-white/10 pb-8">
           <div>
-            <h2 className="text-brand-500 font-bold uppercase tracking-[0.2em] text-sm mb-4 text-black">Ad Gallery</h2>
-            <h3 className="text-4xl md:text-5xl font-black font-serif text-black">Featured Placements</h3>
+            <h2 className="text-brand-500 font-bold uppercase tracking-[0.2em] text-sm mb-4">Ad Gallery</h2>
+            <h3 className="text-4xl md:text-5xl font-black font-serif text-white">Featured Placements</h3>
           </div>
         </div>
         

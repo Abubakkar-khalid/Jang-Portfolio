@@ -7,9 +7,9 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row min-h-[700px]">
         
         {/* Contact Information */}
-        <div className="w-full lg:w-1/3 bg-navy-900 text-black p-12 lg:p-16 flex flex-col justify-center">
+        <div className="w-full lg:w-1/3 bg-navy-900 text-white p-12 lg:p-16 flex flex-col justify-center">
           <h2 className="text-brand-500 font-bold uppercase tracking-[0.2em] text-sm mb-4">Contact</h2>
-          <h3 className="text-4xl font-black font-serif text-black mb-12">Get In Touch</h3>
+          <h3 className="text-4xl font-black font-serif text-white mb-12">Get In Touch</h3>
           
           <div className="space-y-10">
             <div className="group">
@@ -17,7 +17,7 @@ export default function Contact() {
                 <Phone className="w-5 h-5 text-brand-500" />
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Phone</p>
               </div>
-              <p className="text-2xl font-serif text-black">+92 333 5287336</p>
+              <p className="text-2xl font-serif text-white">+92 333 5287336</p>
             </div>
 
             <div className="group">
@@ -25,7 +25,7 @@ export default function Contact() {
                 <Mail className="w-5 h-5 text-brand-500" />
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Email</p>
               </div>
-              <p className="text-lg font-serif text-black">irads007@gmail.com</p>
+              <p className="text-lg font-serif text-white">irads007@gmail.com</p>
             </div>
 
             <div className="group">
@@ -33,7 +33,7 @@ export default function Contact() {
                 <MapPin className="w-5 h-5 text-brand-500" />
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-400">Office Location</p>
               </div>
-              <p className="text-lg font-serif text-black leading-relaxed">Jang Office 9 Ground floor Laraib Plaza G-9 Markaz Islamabad, Pakistan </p>
+              <p className="text-lg font-serif text-white leading-relaxed">Jang Office 9 Ground floor Laraib Plaza G-9 Markaz Islamabad, Pakistan </p>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function Contact() {
         {/* Full Map */}
         <div className="w-full lg:w-2/3 h-[500px] lg:h-auto">
           <iframe 
-            src="https://maps.google.com/maps?q=Jang%20Office,%20Laraib%20Plaza,%20G-9%20Markaz,%20Islamabad&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+            src="https://maps.google.com/maps?q=33.690735,73.0325573+(JANG+OFFICE)&t=&z=18&ie=UTF8&iwloc=B&output=embed" 
             width="100%" 
             height="100%" 
             style={{ border: 0 }} 
