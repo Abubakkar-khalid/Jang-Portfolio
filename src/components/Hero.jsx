@@ -40,9 +40,9 @@ export default function Hero() {
         <div className="flex-1 relative w-full max-w-lg mx-auto lg:max-w-none">
           <div className="relative z-10 p-2 bg-white shadow-2xl border border-slate-100 transform rotate-2 hover:rotate-0 transition-transform duration-500">
             <img 
-              src="https://images.unsplash.com/photo-1585829365295-ab7cd400c167?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+              src="/hero.png" 
               alt="Newspaper Advertising" 
-              className="w-full h-auto object-cover grayscale hover:grayscale-0 transition-all duration-700"
+              className="w-full h-[300px] md:h-[450px] object-contain grayscale hover:grayscale-0 transition-all duration-700"
             />
             <div className="absolute -bottom-6 -left-6 bg-navy-900 text-white p-6 shadow-xl max-w-xs transform -rotate-3">
               <p className="font-serif italic text-xl">"The right words in the right place at the right time."</p>
