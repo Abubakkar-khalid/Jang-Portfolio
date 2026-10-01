@@ -12,7 +12,7 @@ export default function Hero() {
         {/* Text Content */}
         <div className="flex-1 text-center lg:text-left">
           <div className="inline-flex items-center gap-3 mb-8">
-            <span className="w-12 h-[2px] bg-brand-600"></span>
+            <span className="hidden md:block w-12 h-[2px] bg-brand-600"></span>
             <span className="text-brand-600 font-bold uppercase tracking-[0.2em] text-sm">Premium Ad Agency</span>
           </div>
           

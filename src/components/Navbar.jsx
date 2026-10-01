@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { Newspaper } from 'lucide-react';
+import { Newspaper, Menu, X } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -51,8 +52,38 @@ export default function Navbar() {
               Contact Us
             </a>
           </div>
+
+          {/* Mobile Menu Toggle */}
+          <div className="md:hidden flex items-center">
+            <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-black p-2 focus:outline-none">
+              {isMobileMenuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
+            </button>
+          </div>
         </div>
       </div>
+
+      {/* Mobile Menu Dropdown */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden bg-white border-t border-slate-100 shadow-2xl absolute w-full left-0 top-full flex flex-col px-6 pt-4 pb-8 gap-4">
+          {navLinks.map((link) => (
+            <a 
+              key={link.name}
+              href={link.href} 
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="text-black font-bold text-sm tracking-[0.15em] uppercase hover:text-brand-600 transition-colors py-3 border-b border-slate-100"
+            >
+              {link.name}
+            </a>
+          ))}
+          <a 
+            href="/#contact" 
+            onClick={() => setIsMobileMenuOpen(false)}
+            className="mt-4 px-8 py-4 bg-brand-600 text-white font-bold text-xs tracking-[0.2em] uppercase text-center rounded-full hover:bg-black transition-all"
+          >
+            Contact Us
+          </a>
+        </div>
+      )}
     </nav>
   );
 }
